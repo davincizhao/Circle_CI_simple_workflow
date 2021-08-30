@@ -31,6 +31,11 @@ jobs:
           name: print_world
           command: |
             echo "world"
+
+      - run:
+          name: "Print an env var MY_NAME stored in a Context"
+          command: echo ${MY_NAME}
+
      
 workflows:
   # Name the workflow "welcome"
